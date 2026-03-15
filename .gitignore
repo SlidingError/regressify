@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+app/model_store/
+*.log
+.env
+.DS_Store
+
+# Dataset generator and outputs
+generic_dataset.py
+*.csv
