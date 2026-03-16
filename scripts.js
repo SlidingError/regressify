@@ -21,11 +21,15 @@ async function train(){
 
     const learningRate = parseFloat(document.getElementById("learningRate").value) || 0.01
     const iterations = parseInt(document.getElementById("iterations").value, 10) || 100
+    const treeMaxDepth = parseInt(document.getElementById("treeDepth").value, 10) || 3
+    const treeMinSamples = parseInt(document.getElementById("treeMin").value, 10) || 3
 
     const formData = new FormData()
     formData.append("file", file)
     formData.append("learning_rate", learningRate)
     formData.append("iterations", iterations)
+    formData.append("max_depth", treeMaxDepth)
+    formData.append("min_samples", treeMinSamples)
 
     try{
 

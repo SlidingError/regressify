@@ -17,6 +17,14 @@
                     <label for="iterations">Iterations (scratch)</label>
                     <input id="iterations" type="number" value="100">
                 </div>
+                <div class="form-row">
+                    <label for="treeDepth">Tree max depth (0 = auto)</label>
+                    <input id="treeDepth" type="number" value="0" min="0">
+                </div>
+                <div class="form-row">
+                    <label for="treeMin">Tree min samples (0 = auto)</label>
+                    <input id="treeMin" type="number" value="0" min="0">
+                </div>
                 <button id="trainBtn" onclick="train()">Train</button>
                 <p id="trainResult" class="result"></p>
             </div>
