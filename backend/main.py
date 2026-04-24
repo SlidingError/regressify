@@ -9,8 +9,8 @@ import math
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
-from from_scratch import LinearRegressionScratch
-from regression_tree import RegressionTree
+from backend.from_scratch import LinearRegressionScratch
+from backend.regression_tree import RegressionTree
 app = FastAPI()
 
 app.add_middleware(
